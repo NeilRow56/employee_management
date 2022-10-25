@@ -9,7 +9,7 @@ const Home = () => {
   const [ visible, setVisible ] = useState( false )
 
   const handler = () => {
-    setVisible( visible ? false : true )
+    setVisible( !visible  )
   }
 
   return (
@@ -28,10 +28,10 @@ const Home = () => {
         </div> 
 
         {/* Collapsible Form */}
-        <div className="container mx-auto">
+        
           { visible ? <Form />: <></> }
            
-        </div>
+        
          
         {/* Table */}
         <div className="container mx-auto">

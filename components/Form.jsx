@@ -5,8 +5,14 @@ import UpdateUserForm from "./UpdateUserForm"
 
 
 const Form = () => {
+
+    const flag = true
+
     return(
-        <AddUserForm />
+        <div className="container mx-auto">
+            { flag ? <AddUserForm /> : <UpdateUserForm /> }
+        
+        </div>
     )
 
 
